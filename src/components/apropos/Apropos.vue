@@ -6,7 +6,7 @@
         </div>
         <p class="text-center text-lg text-mutedForeground pt-15 desktop:w-180">Je développe des solutions numériques full stack à partir de besoins concrets. De l’analyse à la mise en production, je conçois des interfaces fluides et performantes, pensées pour simplifier les usages, automatiser les processus et faire gagner du temps, tout en créant une réelle valeur business</p>
     </div>
-        <CardAPropos class="mt-15 desktop:w-180">
+        <Layoutprimary class="mt-15 desktop:w-180">
             <div class="flex justify-between flex-col">
                 <div class="flex justify-between">
                     <h2 class="text-primary text-2xl font-medium">Résumé</h2>
@@ -24,29 +24,29 @@
             <div class="flex flex-wrap gap-2 pt-10 pb-2">
                 <Cardtech  v-for="tech in techs">{{ tech }}</Cardtech>
             </div>
-        </CardAPropos>
+        </Layoutprimary>
         <div class="mt-20 mb-25 w-full tablette:flex tablette:flex-wrap tablette:justify-center">
-            <CardAPropos auther-class="hover:border-accent/30 tablette:w-80">
+            <Layoutprimary auther-class="hover:border-accent/30 tablette:w-80">
                 <CardPrimary icone="icone/code.png"/>
                 <ContentCard>
                     <template #head>Développement</template>
                     <template #main>Vue.js, Adonis.js, Typescript, Node.js</template>
                 </ContentCard>
-            </CardAPropos>
-            <CardAPropos auther-class="hover:border-accent/30 tablette:w-80">
+            </Layoutprimary>
+            <Layoutprimary auther-class="hover:border-accent/30 tablette:w-80">
                 <CardPrimary icone="icone/color-palette.png"/>
                 <ContentCard>
                     <template #head>Design</template>
                     <template #main>UI/UX, Design Systems</template>
                 </ContentCard>
-            </CardAPropos>
-            <CardAPropos auther-class="hover:border-accent/30 tablette:w-80">
+            </Layoutprimary>
+            <Layoutprimary auther-class="hover:border-accent/30 tablette:w-80">
                 <CardPrimary icone="icone/thunderbolt.png"/>
                 <ContentCard>
                     <template #head>Performance</template>
                     <template #main>Performance & Accessibilité</template>
                 </ContentCard>
-            </CardAPropos>
+            </Layoutprimary>
         </div>
 </div>
 </template>
@@ -55,11 +55,11 @@
 import { ref } from 'vue';
 
 import Cardtech from './Cardtech.vue';
-import Link from './Link.vue';
-import CardAPropos from './Layoutprimary.vue';
-import CardPrimary from './CardPrimary.vue';
-import ContentCard from './ContentCard.vue';
-import TitleCard from './TitleCard.vue';
+import Link from '../collaboration/Link.vue';
+import Layoutprimary from '../Layoutprimary.vue';
+import CardPrimary from '../CardPrimary.vue';
+import ContentCard from '../ContentCard.vue';
+import TitleCard from '../TitleCard.vue';
 
 
 const techs = ref(['Adonis.js', 'Vue.js', 'TypeScrip', 'Node.js', 'JavaScript', 'UI/UX Design'])

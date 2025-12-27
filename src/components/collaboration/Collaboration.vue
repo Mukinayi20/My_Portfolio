@@ -28,7 +28,7 @@
 </template>
 
 <script setup>
-import TitleCard from './TitleCard.vue';
+import TitleCard from '../TitleCard.vue';
 import ReseauxSociaux from './ReseauxSociaux.vue';
-import Button from './Button.vue';
+import Button from '../Button.vue';
 </script>

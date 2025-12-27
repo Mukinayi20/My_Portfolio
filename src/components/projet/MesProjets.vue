@@ -8,6 +8,6 @@
 </template>
 
 <script setup>
-import TitleCard from './TitleCard.vue';
+import TitleCard from '../TitleCard.vue';
 import ComposantProjet from './ComposantProjet.vue';
 </script>

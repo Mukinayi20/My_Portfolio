@@ -10,10 +10,10 @@
 </template>
 
 <script setup>
-import MesProjets from './MesProjets.vue';
-import Apropos from './Apropos.vue';
+import MesProjets from './projet/MesProjets.vue';
+import Apropos from './apropos/Apropos.vue';
 import Temoignage from './Temoignage.vue';
 import Commentaire from './Commentaire.vue';
-import Collaboration from './Collaboration.vue';
+import Collaboration from './collaboration/Collaboration.vue';
 import Soutien from './soutien/Soutien.vue';
 </script>
