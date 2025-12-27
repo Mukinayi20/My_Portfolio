@@ -1,34 +1,36 @@
 <template>
-    <div>
-        <TitleCard className="flex items-center flex-col gap-5 pb-10">
-            Soutenez mon travail
-        </TitleCard>
-    </div>
-
-    <div class="p-6">
-        <p class="text-mutedForeground pt-6 text-lg">Cette section est temporairement indisponible. <br>
-        Pour tout soutien financier, vous pouvez effectuer votre versement via le numéro indiqué ci-dessous. <br>
-        Pour toute information complémentaire ou assistance, ce même numéro reste à votre disposition.<br><a class="no-underline hover:underline text-blue-600" href="tel:+243821600256">+243 821 600 256</a>
-        </p>
-    </div>
+    <div class="flex flex-col justify-center">
+        <div>
+            <TitleCard className="flex items-center flex-col gap-5 pb-10">
+                Soutenez mon travail
+            </TitleCard>
+        </div>
     
-    
+        <div class="p-6 ml-20 pr-20 flex flex-col items-center">
+            <p class="text-mutedForeground pt-6 text-lg desktop:w-210">Cette section est temporairement indisponible. <br>
+            Pour tout soutien financier, vous pouvez effectuer votre versement via le numéro indiqué ci-dessous (mobile monay). <br>
+            Pour toute information complémentaire ou assistance, ce même numéro reste à votre disposition.<br><a class="no-underline hover:underline text-blue-600" href="tel:+243821600256">+243 821 600 256</a>
+            </p>
+        </div>
 
-    <div>
-        <Layoutprimary autherClass="flex flex-col items-center">
-            <Like/>
-        </Layoutprimary>
-        <Layoutprimary autherClass="flex flex-col items-center">
-            <DIscussion/>
-        </Layoutprimary>
-        <Layoutprimary autherClass="flex flex-col items-center">
-            <Finacement/>
-        </Layoutprimary>
-    </div>
-    <div>
-        <Layoutprimary autherClass="flex flex-col items-center">
-            <FinanceSecondary/>
-        </Layoutprimary>
+            <div class="tablette:flex desktop:justify-center flex-col desktop:flex-row flex justify-center">
+                <Layoutprimary autherClass="flex flex-col items-center tablette:w-55">
+                    <Like/>
+                </Layoutprimary>
+                <Layoutprimary autherClass="flex flex-col items-center tablette:w-55">
+                    <DIscussion/>
+                </Layoutprimary>
+                <Layoutprimary autherClass="flex flex-col items-center tablette:w-55">
+                    <Finacement/>
+                </Layoutprimary>
+        </div>
+        <div class="flex justify-center">
+            <div class="desktop:w-210">
+                <Layoutprimary autherClass="flex flex-col items-center">
+                    <FinanceSecondary/>
+                </Layoutprimary>
+            </div>
+        </div>
     </div>
 </template>
 

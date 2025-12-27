@@ -1,5 +1,5 @@
 <template>
-    <div class="pb-15">
+    <div class="pb-15 flex flex-col justify-center">
         <div class="pt-20">
             <TitleCard src="icone/chat-bubble.png" className="flex items-center flex-col gap-5 pb-10">
                 Commentaire
@@ -10,14 +10,20 @@
                 <template #btn-primary >Ajouter un commentaire</template>
             </Button>
         </div>
-        <div>
-            <h3 class="text-xl p-8 text-Foreground">Tous les commentaires</h3>
-            <Layoutprimary v-for="commentaire in voir" :key="commentaire.id" class="hover:border-accent/50">
-                <div class="flex justify-between">
-                    <h3 class="text-lg text-primary">{{ commentaire.fullname }}</h3> <div class="text-mutedForeground flex items-center text-sm">{{ formatDate(commentaire.date) }}</div>
-                </div>
-                <p class="pt-5 text-primary">"{{ commentaire.commentaire }}"</p>
-            </Layoutprimary>
+        <div class="flex justify-center">
+            <div class="w-210">
+                <h3 class="tablette:pl-25 tablette:text-2xl pb-5 text-xl p-8 text-Foreground"><strong>*</strong> Tous les commentaires</h3>
+            </div>
+        </div>
+        <div v-if="commentaires.length > 0" class="flex flex-col items-center">
+            <div class="desktop:w-210 flex flex-col justify-center">
+                <Layoutprimary v-for="commentaire in voir" :key="commentaire.id" class="hover:border-accent/50">
+                    <div class="flex justify-between">
+                        <h3 class="text-lg text-primary">{{ commentaire.fullname }}</h3> <div class="text-mutedForeground flex items-center text-sm">{{ formatDate(commentaire.date) }}</div>
+                    </div>
+                    <p class="pt-5 text-primary">"{{ commentaire.commentaire }}"</p>
+                </Layoutprimary>
+            </div>
             <div v-if="commentaires.length > 3" class="flex justify-center">
                 <Button @click="showAll = !showAll" src="icone/down-arrow.png" extra-class="flex items-center gap-3 bg-background border-secondary hover:border-[#00d3f2]/40 w-max">
                     <template #btn-primary>Voir plus</template>

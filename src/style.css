@@ -37,6 +37,11 @@
     --font-sans: "Geist", sans-serif;
 }
 
+@theme{
+    --breakpoint-tablette: 700px;
+    --breakpoint-desktop: 900px;
+}
+
 @layer components{
     body{
         @apply bg-popover font-sans
@@ -54,4 +59,5 @@
     .btn-primary{
         @apply p-3 pr-6 pl-6 text-lg rounded-xl border-1
     }
+
 }

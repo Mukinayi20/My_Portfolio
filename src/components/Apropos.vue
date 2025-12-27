@@ -1,13 +1,12 @@
 <template>
-<div class="bg-bdApropos">
-    <div class="flex items-center flex-col w-100 gap-4 mt-25 p-8">
+<div class="bg-bdApropos flex flex-col justify-center items-center">
+    <div class="flex items-center flex-col gap-4 mt-20 p-8">
         <div>
-            <TitleCard className="flex items-center flex-col gap-4 mt-25">À propos</TitleCard>
+            <TitleCard className="flex items-center flex-col gap-4">À propos</TitleCard>
         </div>
-        <p class="text-center text-lg text-mutedForeground pt-15">Je développe des solutions numériques full stack à partir de besoins concrets. De l’analyse à la mise en production, je conçois des interfaces fluides et performantes, pensées pour simplifier les usages, automatiser les processus et faire gagner du temps, tout en créant une réelle valeur business</p>
+        <p class="text-center text-lg text-mutedForeground pt-15 desktop:w-180">Je développe des solutions numériques full stack à partir de besoins concrets. De l’analyse à la mise en production, je conçois des interfaces fluides et performantes, pensées pour simplifier les usages, automatiser les processus et faire gagner du temps, tout en créant une réelle valeur business</p>
     </div>
-
-        <CardAPropos class="mt-15">
+        <CardAPropos class="mt-15 desktop:w-180">
             <div class="flex justify-between flex-col">
                 <div class="flex justify-between">
                     <h2 class="text-primary text-2xl font-medium">Résumé</h2>
@@ -26,22 +25,22 @@
                 <Cardtech  v-for="tech in techs">{{ tech }}</Cardtech>
             </div>
         </CardAPropos>
-        <div class="mt-20 mb-25">
-            <CardAPropos auther-class="hover:border-accent/30">
+        <div class="mt-20 mb-25 w-full tablette:flex tablette:flex-wrap tablette:justify-center">
+            <CardAPropos auther-class="hover:border-accent/30 tablette:w-80">
                 <CardPrimary icone="icone/code.png"/>
                 <ContentCard>
                     <template #head>Développement</template>
                     <template #main>Vue.js, Adonis.js, Typescript, Node.js</template>
                 </ContentCard>
             </CardAPropos>
-            <CardAPropos auther-class="hover:border-accent/30">
+            <CardAPropos auther-class="hover:border-accent/30 tablette:w-80">
                 <CardPrimary icone="icone/color-palette.png"/>
                 <ContentCard>
                     <template #head>Design</template>
                     <template #main>UI/UX, Design Systems</template>
                 </ContentCard>
             </CardAPropos>
-            <CardAPropos auther-class="hover:border-accent/30">
+            <CardAPropos auther-class="hover:border-accent/30 tablette:w-80">
                 <CardPrimary icone="icone/thunderbolt.png"/>
                 <ContentCard>
                     <template #head>Performance</template>

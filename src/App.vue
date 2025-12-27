@@ -1,7 +1,10 @@
 <template>
-    <HeaderPage/>
-    <Main/>
-    <Footer/>
+    <div class="">
+
+        <HeaderPage/>
+        <Main/>
+        <Footer/>
+    </div>
 </template>
 
 <script setup>

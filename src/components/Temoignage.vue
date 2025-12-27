@@ -1,13 +1,13 @@
 <template>
-    <div class="p-6">
-        <div class="pt-14 flex gap-5">
+    <div>
+        <div class="pl-5 pt-14 flex justify-center desktop:pl-45 desktop:w-180 gap-5">
             <div>
                 <img class="w-12" src="/icone/quotes.png" alt="Temoignage">
             </div>
             <h2 class="text-[2.2rem] text-primary pb-8">Témoignage</h2>
         </div>
-        <div v-if="temoignages.length > 0">
-            <Layoutprimary v-for="temoignage in voir" :key="temoignage.id" class="hover:border-accent/50">
+        <div v-if="temoignages.length > 0" class="w-full desktop:flex desktop:justify-center">
+            <Layoutprimary v-for="temoignage in voir" :key="temoignage.id" class="hover:border-accent/50 desktop:w-100">
                 <h3 class="text-lg text-primary">{{ temoignage.fullName }}</h3>
                 <p class="text-base text-mutedForeground">{{ temoignage.metier }} · {{ temoignage.entreprise }}</p>
                 <p class=" text-mutedForeground pt-3">"{{ temoignage.commentaire }}"</p>
@@ -15,7 +15,7 @@
             </Layoutprimary>
         </div>
         <div v-else>
-            <p class="text-center text-lg text-mutedForeground pt-1">Il n'y a pas de temoignage disponible pour le moment, mais si mon travail vous a plus vous pouvez toujours ajouter un témoignage en cliquant sur le bouton "Laisser un témoignage". Merci !</p>
+            <p class="text-center text-lg text-mutedForeground pt-1 desktop:w-180">Il n'y a pas de temoignage disponible pour le moment, mais si mon travail vous a plus vous pouvez toujours ajouter un témoignage en cliquant sur le bouton "Laisser un témoignage". Merci !</p>
         </div>
 
         <div class="flex flex-col items-center gap-6 pt-8">

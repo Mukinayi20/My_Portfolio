@@ -4,8 +4,8 @@
             Travaillons ensemble
         </TitleCard>
     </div>
-    <div class="p-8">
-        <p class="text-center text-lg text-mutedForeground">Ouvert à de nouveaux projets et collaborations, je suis disponible pour échanger et étudier ensemble des solutions adaptées à vos besoins.</p>
+    <div class="p-8 flex flex-col items-center">
+        <p class="text-center text-lg text-mutedForeground desktop:w-210 ">Ouvert à de nouveaux projets et collaborations, je suis disponible pour échanger et étudier ensemble des solutions adaptées à vos besoins.</p>
     </div>
     <div class="flex flex-wrap justify-center gap-4 pt-5 pb-15">
         <a href="mailto:arsenemukinayi20@gmail.com" target="_blank" alt="me faire un mail">
