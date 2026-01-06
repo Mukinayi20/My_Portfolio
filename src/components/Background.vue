@@ -11,7 +11,7 @@ let ctx
 let animationId
 let stars = []
 
-const STAR_COUNT = 80
+const STAR_COUNT = 150
 
 function resizeCanvas() {
   canvas.value.width = window.innerWidth

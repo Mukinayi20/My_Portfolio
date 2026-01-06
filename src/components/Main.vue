@@ -3,7 +3,6 @@
         <Apropos/>
         <MesProjets/>
         <Temoignage/>
-        <Commentaire/>
         <Collaboration/>
         <Soutien/>
     </div>
@@ -13,7 +12,6 @@
 import MesProjets from './projet/MesProjets.vue';
 import Apropos from './apropos/Apropos.vue';
 import Temoignage from './Temoignage.vue';
-import Commentaire from './Commentaire.vue';
 import Collaboration from './collaboration/Collaboration.vue';
 import Soutien from './soutien/Soutien.vue';
 </script>

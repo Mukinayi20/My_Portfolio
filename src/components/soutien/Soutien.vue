@@ -6,7 +6,7 @@
             </TitleCard>
         </div>
     
-        <div class="p-6 flex flex-col items-center">
+        <div class="p-6 flex flex-col items-center z-1">
             <p class="text-mutedForeground pt-6 text-lg desktop:w-210">Cette section est temporairement indisponible. <br>
             Pour tout soutien financier, vous pouvez effectuer votre versement via le numéro indiqué ci-dessous (mobile monay). <br>
             Pour toute information complémentaire ou assistance, ce même numéro reste à votre disposition.<br><a class="no-underline hover:underline text-blue-600" href="tel:+243821600256">+243 821 600 256</a>

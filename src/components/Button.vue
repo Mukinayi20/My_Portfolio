@@ -1,5 +1,5 @@
 <template>
-    <button :class="btnClass">
+    <button :class="btnClass" class="z-1">
         <img v-if="src" :src="src" alt="icone" class="w-3 h-3">
         <slot></slot>
         <slot :class="btnClass" name="btn-primary"></slot>

@@ -8,12 +8,12 @@
         <p class="text-center text-lg text-mutedForeground desktop:w-210 ">Ouvert à de nouveaux projets et collaborations, je suis disponible pour échanger et étudier ensemble des solutions adaptées à vos besoins.</p>
     </div>
     <div class="flex flex-wrap justify-center gap-4 pt-5 pb-15">
-        <a href="mailto:arsenemukinayi20@gmail.com" target="_blank" alt="me faire un mail">
+        <a href="mailto:arsenemukinayi20@gmail.com" target="_blank" alt="me faire un mail" class="z-1">
             <Button extraClass="bg-primary text-primaryForeground hover:opacity-80">
                 <template #btn-primary>Me faire un mail</template>
             </Button>
         </a>
-        <a href="tel:+243821600256">
+        <a href="tel:+243821600256" class="z-1">
             <Button extraClass="bg-primaryForeground border-secondary hover:bg-secondary">
                 <template #btn-primary>M'appeler</template>
             </Button>

@@ -8,7 +8,7 @@
                 <h2 class="text-[2.2rem] text-primary pb-8">Témoignage</h2>
             </div>
             <div v-if="temoignages.length > 0" class="w-full desktop:flex  desktop:flex-wrap desktop:justify-center">
-                <Layoutprimary v-for="temoignage in voir" :key="temoignage.id" class="hover:border-accent/50 desktop:w-100">
+                <Layoutprimary v-for="temoignage in voir" :key="temoignage.id" class="hover:border-accent/50 desktop:w-100 group tablette:w-80 transition-transform duration-800 hover:scale-105 transition-colors hover:bg-gradient-to-r hover:from-[#d8e7e7] hover:to-[#dae9e9] transition-shadow hover:shadow-[0_20px_60px_-20px_rgba(77,159,163,0.20)] ease-in-out">
                     <h3 class="text-lg text-primary">{{ temoignage.fullName }}</h3>
                     <p class="text-base text-mutedForeground">{{ temoignage.metier }} · {{ temoignage.entreprise }}</p>
                     <p class=" text-mutedForeground pt-3">"{{ temoignage.commentaire }}"</p>
@@ -19,7 +19,7 @@
                 <p class="text-center text-lg text-mutedForeground pt-1 desktop:w-180">Il n'y a pas de temoignage disponible pour le moment, mais si mon travail vous a plus vous pouvez toujours ajouter un témoignage en cliquant sur le bouton "Laisser un témoignage". Merci !</p>
             </div>
     
-            <div class="flex flex-col items-center gap-6 pt-8">
+            <div class="flex flex-col items-center gap-6 pt-8 z-1">
                 <div v-if="temoignages.length > 3">
                     <Button @click="showAll = !showAll" extra-class="flex items-center gap-3 bg-background border-secondary hover:border-[#00d3f2]/40 w-max">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#41494F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>

@@ -1,22 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
 @import "tailwindcss";
 
-html {
-  scroll-behavior: smooth;
-}
-.nav-bar__title{
-    transition: transform 500ms ease-in-out, color 400ms 150ms ease-in-out;
-}
-.nav-bar__title:hover{
-    transform: scale(1.1);
-    color: #4c9ea2;
-}
-
-.star-canvas {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-}
 
 @theme {
     --color-background: #F0F1F2;
@@ -76,5 +60,40 @@ html {
     .btn-primary{
         @apply p-3 pr-6 pl-6 text-lg rounded-xl border-1
     }
+}
 
+
+html {
+  scroll-behavior: smooth;
+}
+.nav-bar__title{
+    transition: transform 300ms ease-in-out, color 200ms 150ms ease-in-out;
+}
+.nav-bar__title:hover{
+    transform: scale(1.1);
+    color: #4c9ea2;
+}
+
+.nav-bar__link{
+    transition: transform 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.nav-bar__link:hover{
+    transform: scale(1.1);
+    color: #41494F;
+}
+
+/* .degrader-carde{
+    transition: transform all 200ms ease-in-out;
+}
+
+.degrader-carde:hover{
+    transform: scale(1.1);
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+}  */
+
+.star-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
 }
