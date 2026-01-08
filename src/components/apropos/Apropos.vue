@@ -33,7 +33,7 @@
                 <Cardtech/>
             </div>
         </Layoutprimary>
-        <div class="mt-20 mb-25 w-full tablette:flex tablette:flex-wrap tablette:justify-center">
+        <div class="mt-20 mb-25 w-full tablette:flex tablette:flex-wrap tablette:justify-center z-1">
             <Layoutprimary auther-class="group hover:border-accent/30 tablette:w-80 transition-transform duration-800 delay-300 hover:scale-110 transition-colors hover:bg-gradient-to-r hover:from-[#d8e7e7] hover:to-[#dae9e9] transition-shadow hover:shadow-[0_20px_60px_-20px_rgba(77,159,163,0.20)] ease-in-out">
                 <div class="bg-secondary w-max p-3 rounded-lg group-hover:bg-accent/40 transition duration-700 group-hover:rotate-20 group-hover:shadow-[0_26px_100px_-10px_#fff] ease-in-out">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#4D9FA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml-icon lucide-code-xml"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>

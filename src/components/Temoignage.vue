@@ -19,8 +19,8 @@
                 <p class="text-center text-lg text-mutedForeground pt-1 desktop:w-180">Il n'y a pas de temoignage disponible pour le moment, mais si mon travail vous a plus vous pouvez toujours ajouter un témoignage en cliquant sur le bouton "Laisser un témoignage". Merci !</p>
             </div>
     
-            <div class="flex flex-col items-center gap-6 pt-8 z-1">
-                <div v-if="temoignages.length > 3">
+            <div class="flex flex-col items-center gap-6 pt-8">
+                <div v-if="temoignages.length > 3" class="z-1">
                     <Button @click="showAll = !showAll" extra-class="flex items-center gap-3 bg-background border-secondary hover:border-[#00d3f2]/40 w-max">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#41494F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
                         <template #btn-primary>Voir plus</template>

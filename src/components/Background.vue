@@ -1,5 +1,5 @@
 <template>
-  <canvas ref="canvas" class="star-canvas"></canvas>
+  <canvas ref="canvas" class="star-canvas z-0"></canvas>
 </template>
 
 
@@ -13,8 +13,8 @@ let stars = []
 
 // Configuration
 const CONFIG = {
-  desktopCount: 400,
-  mobileCount: 150,
+  desktopCount: 300,
+  mobileCount: 100,
   color: '#4c9ea2',
   mobileBreakpoint: 768
 }
