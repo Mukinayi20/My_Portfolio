@@ -6,30 +6,45 @@
         <nav class="nav-bar shadow-none border-b border-secondary/30 fixed items-center top-0 z-2 desktop:pl-40 desktop:pr-40 desktop:font-semibold">
             <a href="#nav-bar" class="nav-bar__title">PORTFOLIO</a>
             <div class="hidden desktop:flex desktop:gap-8 text-Foreground/40">
-                <a href="#apropos" class="nav-bar__link">À propos</a>
-                <a href="#projet" class="nav-bar__link">Projets</a>
-                <a href="#contact" class="nav-bar__link">Contact</a>
+                <a href="#apropos" class="group nav-bar__link">
+                    <div class="link-anime"></div>
+                    <div>À propos</div>
+                </a>
+                <a href="#projet" class="group nav-bar__link">
+                    <div class="link-anime"></div>
+                    <div>Projets</div>
+                </a>
+                <a href="#contact" class="group nav-bar__link">
+                    <div class="link-anime"></div>
+                    <div>Contact</div>
+                </a>
             </div>
-            <div class="flex gap-3">
+            <div class="flex gap-4">
                 <BtnTheme/>
-                <a  href="#" class="p-2 text-accent font-medium border border-accent/30 rounded-xl pl-4 pr-4">Discutons</a>
+                <a  href="#" class="relative group p-2 text-accent font-medium border border-accent/30 rounded-xl pl-4 pr-4 transition-transform duration-500 hover:scale-105 origin-left ease-in-out">
+                    <div class="absolute inset-0 w-0 bg-accent/10 rounded-xl transition-all duration-500 ease-in-out group-hover:w-full"></div>
+                    <div class="relative z-10">Discutons</div>
+                </a>
             </div>
         </nav>
-        <div class="primary-center mt-20 h-70" ref="bigImage">
-            <img class="header-profil transition-transfordesktop:w200m duration-20 ease-out " :style="{ transform: `scale(${scale})` }" src="/IMG-20250901-WA0029.jpg" alt="Profil">
+        <div class="primary-center mt-30 h-70" ref="bigImage">
+            <img class="header-profil transition-transfordesktop:w200m duration-20 ease-in-out shadow-[0px_0px_50px_-15px_#4D9FA3]" :style="{ transform: `scale(${scale})` }" src="/IMG-20250901-WA0029.jpg" alt="Profil">
         </div>
         <div>
-            <div class="primary-center mt-2 h-5">
-                <h1 class="text-[2.5rem] text-primary">Arsène Mukinayi</h1>
+            <div class="flex justify-center items-center primary-center mt-7 h-5 gap-4">
+                <h1 class="tablette:text-[3.4rem] text-[2.3rem] text-primary transition duration-500 hover:animate-leaf ease-in-out">Arsène Mukinayi</h1>
+                <div class="group border border-accent rounded-full p-2 transition duration-400 hover:scale-110 ease-in-out cursor-pointer  animate-leaf">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4D9FA3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-badge-info-icon lucide-badge-info transition duration-400 group-hover:rotate-15"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><line x1="12" x2="12" y1="16" y2="12"/><line x1="12" x2="12.01" y1="8" y2="8"/></svg>
+                </div>
             </div>
             <div class="primary-center h-70 p-8">
                 <p class="text-center text-lg text-mutedForeground desktop:w-180">Développeur créatif, je conçois des expériences numériques minimalistes et innovantes en appliquant mes compétences pour résoudre les problématiques avec rigueur et créer des solutions à forte valeur ajoutée</p>
             </div>
             <div class="flex gap-4 justify-center">
-                <Button extraClass="bg-primary text-primaryForeground hover:opacity-75">
+                <Button extraClass="text-primaryForeground transition duration-400 hover:scale-103 bg-accent ease-in-out">
                     <template #btn-primary>Voir mes projets</template>
                 </Button>
-                <Button extraClass="border-secondary hover:bg-secondary">
+                <Button extraClass="border-secondary transition transition duration-400 hover:scale-103 ease-in-out overflow-hidden after:content-['']   after:absolute after:inset-0 after:bg-accent/10 after:rounded-xl after:scale-x-0 after:origin-left after:transition-transform after:duration-500 after:ease-in-out hover:after:scale-x-100">
                     <template #btn-primary>Me contacter</template>
                 </Button>
             </div>

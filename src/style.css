@@ -43,6 +43,29 @@
     --breakpoint-desktop: 900px;
 }
 
+@layer {
+    .animate-leaf{
+        animation: leaf-wind 5s ease-in-out infinite;
+    }
+
+    @keyframes leaf-wind {
+        0%   { transform: translate(0px, 0px); }
+        50%  { transform: translate(4px, -4px) }
+        100% { transform: translate(0, 0); }
+    }
+
+    .gradient-wind{
+        background-size: 200% 200%;
+        animation: gradient-wind .5s infinite ease-in-out;
+    }
+
+    @keyframes gradient-wind {
+        0% { background-postion: 0% 0%}
+        
+        100% {background-position:100% 0%;}
+    }
+}
+
 @layer components{
     body{
         @apply bg-popover font-sans
@@ -52,7 +75,7 @@
         @apply flex justify-between p-4 bg-popover/95 text-primary font-medium left-0 w-full shadow
     }
     .header-profil{
-        @apply w-60 h-60 rounded-full object-cover
+        @apply w-70 h-70 rounded-full object-cover
     }
     .primary-center{
         @apply grid place-content-center 
@@ -61,24 +84,16 @@
         @apply p-3 pr-6 pl-6 text-lg rounded-xl border
     }
     .tech-carde{
-        @apply m-4 flex flex-col items-center h-30 w-25
+        @apply  border-primary/10 pl-3 pr-3 bg-secondary/20 rounded-lg flex justify-center items-center gap-3 transition duration-400 hover:scale-105 hover:bg-accent/30 ease-in-out
     }
     .tech-icone{
-        @apply p-3 rounded-2xl tablette:grayscale transition-all duration-700 group-hover:grayscale-0 hover:scale-120 bg-popover ease-in-out border border-primary/10
+        @apply transition-all duration-700 hover:scale-120 ease-in-out
     }
     .progress {
-        @apply w-25 h-2 rounded-2xl
+        @apply w-20 h-2 rounded-2xl
     }
-    .progress::-webkit-progress-bar {
-      background-color: #e5e7eb;
-      border-radius: 999px;
-    }
-    .progress::-webkit-progress-value {
-      @apply bg-accent;
-      border-radius: 999px;
-    }
-    .progress::-moz-progress-bar {
-      @apply bg-accent
+    .link-anime{
+        @apply absolute top-6 w-full border border-accent/0 shadow-[22px_-19px_100px_5px_#4D9FA3/0] scale-x-0 transition origin-left duration-400 group-hover:scale-x-100 group-hover:border-accent group-hover:shadow-[22px_-19px_100px_5px_#4D9FA3] ease-in-out
     }
 }
 
@@ -97,6 +112,7 @@ html {
 }
 
 .nav-bar__link{
+    position: relative;
     transition: transform 200ms ease-in-out, color 200ms ease-in-out;
 }
 
@@ -105,21 +121,12 @@ html {
     color: #41494F;
 }
 
-/* .degrader-carde{
-    transition: transform all 200ms ease-in-out;
-}
-
-.degrader-carde:hover{
-    transform: scale(1.1);
-    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
-}  */
-
 .star-canvas {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  z-index: -1;
   display: block;
 }

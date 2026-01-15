@@ -23,14 +23,18 @@
                 </div>
                 <div>
                     <p class="text-lg text-mutedForeground pt-10">"Développeur Full Stack et architecte de solutions web, je me spécialise dans la conception d'interfaces modernes et d'architectures numériques robustes. Fort d'une expertise technique centrée sur TypeScript, Node.js et l'écosystème JavaScript (AdonisJS), je m'attache à transformer des concepts complexes en applications fluides, alliant une rigueur backend pointue à une élégance frontend soignée."</p>
-
-                    <p class="text-lg text-mutedForeground pt-10 hidden tablette:block">"Passionné par la création d'expériences utilisateur intuitives, je privilégie un design minimaliste couplé à des performances optimales. Mon approche repose sur une volonté constante d'innovation : je m'efforce de concevoir des produits qui non seulement résolvent des problématiques concrètes, mais qui dépassent les attentes des utilisateurs en offrant une solution à forte valeur ajoutée."</p>
-
-                    <h3 class="text-lg pt-10 text-primary">compétences techniques</h3>
+                    <div class="flex items-Center pt-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none" stroke="#4D9FA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dot-icon lucide-dot"><circle cx="12.1" cy="12.1" r="1"/></svg>
+                        <h3 class="text-lg text-primary">compétences techniques</h3>
+                    </div>
                 </div>
             </div>
-            <div class="flex flex-wrap gap-2 pt-10 pb-2">
+            <div class="flex flex-wrap gap-2 pt-5 pb-2">
                 <Cardtech/>
+            </div>
+            <div class="flex items-Center pt-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" fill="none" stroke="#4D9FA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dot-icon lucide-dot"><circle cx="12.1" cy="12.1" r="1"/></svg>
+                <h3 class="text-lg text-primary">Savoir être</h3>
             </div>
         </Layoutprimary>
         <div class="mt-20 mb-25 w-full tablette:flex tablette:flex-wrap tablette:justify-center z-1">
