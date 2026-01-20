@@ -1,8 +1,8 @@
 <template>
-<div id="apropos" class="bg-bdApropos flex flex-col justify-center items-center">
+<div id="apropos" class="flex flex-col justify-center items-center">
     <div class="flex items-center flex-col gap-4 mt-20 p-8">
         <div>
-            <TitleCard className="flex items-center flex-col gap-4">À propos</TitleCard>
+            <TitleCard className="flex items-center flex-col gap-4 dark:text-primary/80">À propos</TitleCard>
         </div>
         <p class="text-center text-lg text-mutedForeground pt-15 desktop:w-180">Je développe des solutions numériques full stack à partir de besoins concrets. De l’analyse à la mise en production, je conçois des interfaces fluides et performantes, pensées pour simplifier les usages, automatiser les processus et faire gagner du temps, tout en créant une réelle valeur business</p>
     </div>

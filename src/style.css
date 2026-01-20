@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 
 @theme {
     --color-background: #F0F1F2;
@@ -32,6 +34,14 @@
     --color-border: #D5D8DB;
     --color-input: #D5D8DB;
     --color-ring: #4D9FA3;
+}
+
+.dark{
+    --color-popover: #0e1216;
+    --color-primary: #edeeef;
+    --color-Foreground: #131414;
+
+    --color-secondary: #41494F;
 }
 
 @theme{
@@ -72,7 +82,7 @@
     }
 
     .nav-bar{
-        @apply flex justify-between p-4 bg-popover/95 text-primary font-medium left-0 w-full shadow
+        @apply flex justify-between p-4 bg-popover/95 text-primary font-medium left-0 w-full shadow border-none
     }
     .header-profil{
         @apply w-70 h-70 rounded-full object-cover

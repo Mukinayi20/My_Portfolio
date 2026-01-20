@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col justify-center">
         <div>
-            <TitleCard className="flex items-center flex-col gap-5 pb-10">
+            <TitleCard className="flex items-center flex-col gap-5 pb-10 dark:text-primary/80">
                 Soutenez mon travail
             </TitleCard>
         </div>
